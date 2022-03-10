@@ -1,0 +1,25 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Text
+{% endblock %}
+
+{% block main %}
+
+    {% if session['tweets_text'] %}
+        <h2>Text to be Analyzed for Tone</h2>
+        <div>{{ session['tweets_text'] }}</div>
+    {% endif %}
+
+
+    {% if session['tweets_content'] %}
+        <h2>Content to be Analyzed for Personality</h2>
+        <div>
+            {% for content in session['tweets_content']['contentItems'] %}
+                content : {{ content['content'] }}
+            {% endfor %}
+        </div>
+    {% endif %}
+
+{% endblock %}
+

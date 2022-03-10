@@ -1,0 +1,31 @@
+{
+    "twitter": {
+        "client_key": "",
+        "client_secret": "",
+        "base_url": "https://api.twitter.com/"
+
+    },
+    "watson": {
+        "tone_api": {
+            "version": "2017-09-21",
+            "apikey": "",
+            "iam_apikey_description": "",
+            "iam_apikey_name": "",
+            "iam_role_crn": "",
+            "iam_serviceid_crn": "",
+            "url": "https://gateway-wdc.watsonplatform.net/tone-analyzer/api"
+        },
+        "personality_api": {
+            "version": "2017-10-13",
+            "apikey": "",
+            "iam_apikey_description": "",
+            "iam_apikey_name": "",
+            "iam_role_crn": "",
+            "iam_serviceid_crn": "",
+            "url": "https://gateway-wdc.watsonplatform.net/personality-insights/api"
+        }
+    }
+}
+
+
+

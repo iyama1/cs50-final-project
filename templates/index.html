@@ -1,0 +1,24 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Main
+{% endblock %}
+
+{% block main %}
+    <form action="/" method="POST">
+        <div class="form-group">
+            <input class="form-control" name="handle" placeholder="twitter handle" type="text">
+            <button class="btn btn-primary" type="submit">Get Tweets</button>
+        </div>
+    </form>
+
+    {% if tweet_count %}
+        <p>@{{ screen_name }} has {{ tweet_count }} tweets</p>
+    {% endif %}
+
+    {% if tweets is defined %}
+        {{ tweets.to_html(classes="table table-striped") | safe }}
+    {% endif %}
+
+{% endblock %}
+
